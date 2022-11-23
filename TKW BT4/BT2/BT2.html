@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="BT2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee+Spice&family=Lobster&family=Noto+Sans&family=Paytone+One&family=Roboto+Slab&family=Roboto:wght@400;900&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+.home {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+.home-icon1 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    background-color: rgb(1, 230, 255);
+}
+
+.home-icon1:hover {
+    background-color: rgb(1, 140, 159);
+}
+
+.all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.banner0{
+    display: block;
+    top: 0;
+    position: relative;
+}
+.banner1{
+    width: 100%;
+}
+.banner2{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #e7f0f6;
+    display: flex;
+    align-items: center;
+    min-height: 64px
+}
+.banner3{
+    display: flex;
+    align-items: center;
+}
+.banner4 {
+    margin-bottom: 4px;
+    color: #00658e;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 50px;
+}
+.banner5 {
+    color: #00658e;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 50px;
+}
+.a1{
+    text-decoration: none;
+    margin-left: 500px;
+}
+.header {
+    display: flex;
+}
+
+.header1 {
+    width: 60%;
+    background-color: #212121;
+    padding: 25px 0px;
+}
+
+.header1 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    padding-left: 23px;
+}
+
+.header2 {
+    width: 40%;
+    background-color: #212121;
+    padding: 25px 0px;
+}
+
+.header2 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 28px;
+    font-size: 16px;
+}
+
+.header2 a:hover {
+    color: #acb4ac;
+}
+
+.header3 {
+    width: 1%;
+    background-color: #212121;
+    padding: 25px 40px;
+}
+
+.header-icon {
+    list-style-type: none;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/* content */
+.content1 {
+    margin-left: 58px;
+}
+
+.content-1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.content-2 {
+    font-size: 16px;
+}
+
+/* topbar */
+.topbar {
+    display: flex;
+    gap: 4px;
+}
+
+.topbar1 {
+    margin-left: 58px;
+    margin-top: 75px;
+}
+
+.topbar1 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 6px 10px;
+    margin-left: 5px;
+}
+
+.topbar1 a {
+    background-color: #dfdfdf;
+}
+
+.topbar1 a:hover {
+    background-color: #d4cbcb;
+}
+
+.topbar2 {
+    /* background-color: #000000; */
+    margin-top: 75px;
+
+
+}
+
+.topbar2 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+    font-size: 15px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 6px 10px;
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.topbar2 a {
+    background-color: #000000;
+}
+
+.topbar3 {
+    margin-top: 75px;
+}
+
+.topbar3 a {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+    font-size: 15px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 6px 10px;
+    margin-left: 5px;
+}
+
+.topbar3 a {
+    background-color: #dfdfdf;
+}
+
+.topbar3 a:hover {
+    background-color: #d4cbcb;
+}
+
+/* body */
+.body1 {
+    display: flex;
+}
+
+.body11 {
+    margin-top: 75px;
+    width: 340px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.body12 {
+    margin-top: 75px;
+    width: 340px;
+    height: 300px;
+    margin-left: 38px;
+    background-color: rgb(255, 255, 255);
+}
+
+.body11:hover {
+    border: 1px solid rgb(200, 191, 191);
+}
+
+.body12:hover {
+    border: 1px solid rgb(200, 191, 191);
+}
+
+.body11-11 {
+    padding: 20px;
+}
+
+.body11 a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.body12 a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.body11-1 {
+    width: 300px;
+}
+
+.chu1 {
+    margin-top: 1px;
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    color: #000000;
+}
+
+.chu2 {
+    margin-top: 0px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    color: #000000;
+}
+
+/* footer */
+.footer1 {
+    border-top: 1pt solid gray;
+    display: flex;
+    gap: 30px;
+    margin-top: 85px;
+}
+
+.footer-link {
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 7px;
+    font-size: 50px;
+    height: 68px;
+    color: rgb(210, 190, 190);
+}
+
+.footer-chu {
+    width: 470px;
+    margin-bottom: 40px;
+}
+
+.footer-link1 {
+    list-style-type: none;
+    color: rgb(83, 75, 75);
+    margin-right: 10px;
+}
+
+.footer2 {
+    border-top: 1pt solid gray;
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+}
+
+.footer2-chu {
+    margin-left: 40px;
+    font-size: 30px;
+    color: #8d938d;
+    text-decoration: none;
+}
+
+.footer22-2 {
+    margin-top: 12px;
+}
+
+.footer2-2 {
+    list-style-type: none;
+    color: rgb(83, 75, 75);
+    margin-right: 10px;
+}
+.imgicon{
+    width: 64px;
+    height: 64px;
+    margin-top: 20px;
+}
+    </style>
+    <div class="all">
+        <div class="banner0">
+            <div class="banner2">
+                <div class="banner3">
+                    <div>
+                        <div class="banner4"><b>The latest version of Material Design is now available for Android</b></div>
+                        <div class="banner5"><b>Learn about Material 3's new features and support for modern design &amp; developer workflows</b></div>
+                    </div>
+                        <a href="https://m3.material.io/" class="a1"><b>Start exploring Material 3 -></b></a>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header1">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="header2">
+                <a href="https://material.io/design">Design</a>
+                <a href="https://material.io/components">Components</a>
+                <a href="https://material.io/develop">Develop</a>
+                <a href="https://material.io/resources">Resources</a>
+                <a href="https://material.io/blog">Blog</a>
+            </div>
+            <div class="header3">
+                <a href=""><i class="header-icon fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <p class="content-1">Components</p>
+                <p class="content-2">Material Components are interactive building blocks for creating a user interface.</p>
+                <p class="content-2">Browse all components or select a specific platform.</p>
+            </div>
+        </div>
+        <div class="topbar">
+            <div class="topbar1">
+                <a href="">All Components</a>
+                <a href="">Android</a>
+            </div>
+            <div class="topbar2">
+                <a href="">Web</a>
+            </div>
+            <div class="topbar3">
+                <a href="">Flutter</a>
+                <a href="">iOS</a>
+            </div>
+        </div>
+        <div class="body">
+            <div class="body1">
+                <div class="body12">
+                    <a href="https://material.io/components/app-bars-top">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/eot96a-qjAr0QypKKf-6qSJGQQqW086-GV2vv0D9F358-VFiJSWifg6-q38vbI_JsxCPnbJNzjCH12OFDXJBzScB3h__HXLwKWkjYA=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">App bars: top</p>
+                            <p class="chu2">The top app bar displays information and actions relating to the current
+                                screen.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/banners">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/tOZdWbfWtIc5GHTWsW0Daqj5I6lCCrUN8-YuEVjSn87JNN6x6PEjfmne-gpBo4jHBI4gqLmi0kLVpubF41ZT2mM8glkLzo2iWgK_-jY=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Banners</p>
+                            <p class="chu2">A banner displays a prominent message and related optional actions.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/buttons">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/GHRz-5S00u7WkRGl8iUm8ezoR6eoB2NJztu-trJv3raMDvpSACeQ5O0KOoAG7SRHJNDM_mT04Hei1NwjTN-ZsIFms_bsQ4zxRyxdQQ=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Buttons</p>
+                            <p class="chu2">Buttons allow users to take actions, and make choices, with a single tap.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="body1">
+                <div class="body12">
+                    <a href="https://material.io/components/buttons-floating-action-button">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/T8dlYzaaU2SV86x6lqNMjlHcrFdKv85QMW1UnJShGwklRQyuUqZIklOjnEuqrZzF1h84ohrzz2ITajbT9IdljofNFmP5csEq6G7W=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Buttons: floating action button</p>
+                            <p class="chu2">A floating action button (FAB) represents the primary action of a screen.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/cards">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/FyE3qjGwwnoeMgiyOuIxdxTQQM9Cr0ftNakOXOA8cp137rKN09BFHraERm1NPUFBTGxVgchkdl6UABc11ZcJDML4ui466W2BFIxc9Q=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Cards</p>
+                            <p class="chu2">Cards contain content and actions about a single subject.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/checkboxes">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/CvrqW5RLW2qZSHan74iRRLL0qEHNNpRgaYM9NIV1ee2uFP-UxRxy3rXeMIigN9BA1Y86s1fVToVJF4LCSK0wVpg3bTjqqpruKwRYJjE=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Checkboxes</p>
+                            <p class="chu2">Checkboxes allow users to select one or more items from a set. Checkboxes
+                                can turn an option on or off.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="body1">
+                <div class="body12">
+                    <a href="https://material.io/components/chips">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/JKZWT2u0VHrv2YGSuCms1z9eCmMcCusEkqaR2eJwXgrGPLvZkf6L7ZzCZSTNNeS04b29EXjgf92rVOCvJwwhopkWmj_vH38x3aE9jA=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Chips</p>
+                            <p class="chu2"> Chips are compact elements that represent an input, attribute, or action.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/data-tables">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/hhopoJUlJ7BBmP9zjb7DXcvf8HzE994eJUb8tw33d_eb0MuwQO5yb9gHAZYRj5Xgs25avCWMm1chIlc_WlN83fkkinzKHSKQNDQkKQ=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Data tables</p>
+                            <p class="chu2">Data tables display sets of data across rows and columns.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/dialogs">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/GPbOMNf_2ZtRxuW0xRZH_JMHmOzyBFoVIfPOHEQoWmEbkriQXK_Cmztg0xwRAdIrCIDA9_dCp4XQGcYui7N61HvmrfdhwuLIjPD-=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Dialogs</p>
+                            <p class="chu2">Dialogs inform users about a task and can contain critical information,
+                                require decisions, or involve multiple tasks.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="body1">
+                <div class="body12">
+                    <a href="https://material.io/components/image-lists">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/lcxACZ--vBddyJTaIDmqhGTKUmlEqPjuLOvSH_a_GiV8EByCIvTkBdDdXr8hOQzedFa07W18mdaPx1upWGlkg1wnTKOBrGb8BuM0kQ=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Image lists</p>
+                            <p class="chu2">Image lists display a collection of images in an organized grid.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/lists">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/t_vPU8FZrRAt__Zi7mYWN-Grdjphe39JN3-EEcNLetZmyxFNCaq_9NfvClo78sF8mkE2jvvPOkKPAYJ77Yel0swFmLFKV8OZ7TKQ=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Lists</p>
+                            <p class="chu2">Lists are continuous, vertical indexes of text or images.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/menus">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/2I4-AyriF2dkQIhH3R5sSRuRjyjm02ZGa_kH5hUj_58a1eXhfyktEMpVwk5DfJ6bituiLtyL9VWvYecjb7EpQdU3PwdepZ2CjEPn=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Menus</p>
+                            <p class="chu2">Menus display a list of choices on temporary surfaces.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="body1">
+                <div class="body12">
+                    <a href="https://material.io/components/navigation-drawer">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/TQCv8eoPVTKptQIKRfjXPbhf69y1i67TuMIkzRS1Y4mz7WBVKywuRFaQAriQ8mHQjR8p0M3tEvbp7yAP45qVuuhx3-Qyf3qzwW72cMo=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Navigation drawer</p>
+                            <p class="chu2"> Navigation drawers provide access to destinations in your app.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/progress-indicators">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/J2Rbtnf0Ll1O8NXjvK5Nd1Mm6tyLdQ0SkihStYAUMkjYtVwijX0OSF2cLkFaeFj581Tn5-hHjVsrFwAZeGSmWGu3O6D0I1rvO2j0=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Navigation drawer</p>
+                            <p class="chu2">Navigation drawers provide access to destinations in your app.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/radio-buttons">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/iZGrKUN-U7ZrnvofBi9axre8e8Ysds0SBXfZ5X01ffsnTgxMkdGiXdrjh9OIbaw0tGhaTUK5EZnBvFR2ibA14haqR95PENja3RVl00s=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Radio buttons</p>
+                            <p class="chu2">Radio buttons allow users to select one option from a set.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="body1">
+                <div class="body12">
+                    <a href="https://material.io/components/sliders">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/w6nNeLcjpXypo2U6_gvunUesgTNOAqzEzb5ZzxxT4AyGH_M_L_EHrybg9sJNg78BDHyeCPIQCe3Hk2sTglU0EQe7cOBsqUMFicq1lg=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Sliders</p>
+                            <p class="chu2">Sliders allow users to make selections from a range of values.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/sliders">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/fGgZPDOszTD-2ReAC85l5op7wCE3uvnPta13Aib2bSlzN8LXoNYlDG6fY5DY1qKqbLTbGGlx9VgahUDdjDgdjq8sJNqoIY4-GPxKRA=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Snackbars</p>
+                            <p class="chu2">Snackbars provide brief messages about app processes at the bottom of the
+                                screen.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/switches">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/k7KGP2RLfIP_oyF68S544P82ISry-NrjvhxaDxZD8A37EVobRiCTaZI7DeTgtiif9GspkKam6v2w2O32CbwHEWcjS9g70gmTwlwS=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Switches</p>
+                            <p class="chu2">Switches toggle the state of a single item on or off.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="body1">
+                <div class="body12">
+                    <a href="https://material.io/components/tabs">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/AYFp2VmMn9nslx18M6Es9C57S7p3zkiQVLl3PHvMu-OpbvK1FlLJN2MHfFNZfmfMCk1drCw84FKebz5STJ7QN69IHhH9WF1Kklir=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Tabs</p>
+                            <p class="chu2">Tabs organize content across different screens, data sets, and other
+                                interactions.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/text-fields">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/Lxb_jZfXkASZ1DCzNhyS3IG7mIsPhBVmaX20Hn7XnwpS_Po9wQIC-5rEwUsYlb5TkgMjqI45-j1w4i4WM4wSlA-b0qKtmJ69hV0j=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Text fields</p>
+                            <p class="chu2">Text fields let users enter and edit text.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="body11">
+                    <a href="https://material.io/components/tooltips">
+                        <div class="body11-1">
+                            <img class="body11-11"
+                                src="https://lh3.googleusercontent.com/Asm1KHPsUD-GDDglcItzvl2LKWsyrMzKMrWDA5siHaF7PAvngniS57PMZTHFsDHkHsjT9dPWC5tEpRBG7i5syZ7sbRiRpL9oE84F=w760-h380"
+                                alt="" width="300px" height="150px">
+                            <p class="chu1">Tooltips</p>
+                            <p class="chu2">Tooltips display informative text when users hover over, focus on, or tap an
+                                element.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <a class="footer-link" href="https://material.io/"></a>
+                <img src="https://www.freelogovectors.net/svg11/googlemateriallogo-freelogovectors.net.svg" class="imgicon" alt=""></img>
+                <div>
+                    <p class="footer-chu">Material is an adaptable system of guidelines, components, and tools that
+                        support
+                        the best practices
+                        of user interface design. Backed by open-source code, Material streamlines collaboration between
+                        designers and developers, and helps teams quickly build beautiful products.</p>
+                    <a class="footer-link1" href="https://github.com/material-components">GitHub</a>
+                    <a class="footer-link1" href="https://twitter.com/materialdesign">Twitter</a>
+                    <a class="footer-link1" href="https://www.youtube.com/materialdesign">Youtube</a>
+                    <a class="footer-link1" href="https://material.io/feed.xml">Blog RSS</a>
+                    <a class="footer-link1"
+                        href="https://services.google.com/fb/forms/materialdesignnewsletter/">Subscribe for updates</a>
+                </div>
+            </div>
+            <div class="footer2">
+                <a class="footer2-chu" href="">Google</a>
+                <div class="footer22-2">
+                    <a class="footer2-2" href="https://policies.google.com/privacy">Privacy Policy</a>
+                    <a class="footer2-2" href="https://policies.google.com/terms">Terms of Service</a>
+                    <a class="footer2-2" href="https://material.io/components?platform=web">Feedbacks</a>
+                </div>
+            </div>
+        </div>
+        <div style="display:flex; align-items: center; justify-content: center;"><a style="font-size: 30px; text-decoration: none; color: red;" href="https://mduc21082003.github.io/"><b>RETURN HOMEPAGE</b></a></div>
+
+
+    </div>
+</body>
+</html>

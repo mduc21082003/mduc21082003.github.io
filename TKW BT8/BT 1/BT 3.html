@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BT 3.css">
+</head>
+<body>
+<style>
+    body {
+    font-size: 16px;
+    border: solid 2px black;
+}
+
+#h1{
+    color: purple;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 200px;
+}
+
+#button {
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+#inputKhac{
+    size: 50px;
+}
+
+</style>    
+    <h1 id="h1">FORM ĐĂNG KÝ</h1>
+    <form action="" onsubmit="return validateForm()" name="from_dk">
+    <p>Họ <input type="text" name="txt_ho"></p>
+    <p>Tên <input type="text" name="txt_ten"></p>
+    <p>Ngày sinh: Ngày 
+        <select>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+        </select>
+        Tháng
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+        </select>
+        Năm
+        <select name="" id="">
+            <option value="">1990</option>
+            <option value="">1991</option>
+            <option value="">1992</option>
+            <option value="">1993</option>
+            <option value="">1994</option>
+        </select>
+    </p>
+    <p>Giới tính:
+        <input type="radio">Nam
+        <input type="radio">Nữ
+    </p>
+    <p>Số điện thoại:
+        <input type="text" id="txt_dienthoai">
+    </p>
+    <p>Sở thích:
+        <input type="checkbox">Đọc sách
+        <input type="checkbox">Xem phim
+        <input type="checkbox">Nghe nhạc
+        <input type="checkbox">Đá bóng
+    </p>
+    <p>Khác
+       <textarea name="" id="" cols="30" rows="3"></textarea>
+    </p>
+    <div id="button">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+    </form>
+    <div style="display:flex; align-items: center; justify-content: center;"><a style="font-size: 30px; text-decoration: none; color: red;" href="https://mduc21082003.github.io/"><b>RETURN HOMEPAGE</b></a></div>
+</body>
+<script>
+    function validateForm(){
+        var x;
+        x=document.forms["from_dk"]["txt_ho"].value;
+        if(x==""){
+            alert("Bạn chưa nhập họ");
+            return false;
+        }
+        x=document.forms["from_dk"]["txt_ten"].value;
+        if(x==""){
+            alert("Bạn chưa nhập tên");
+            return false;
+        }
+        x=document.forms["from_dk"]["txt_dienthoai"].value;
+        if(isNaN(x) || length(x)==0 || length(x)<10){
+            alert("Điện thoại phải là số, mời nhập lại");
+            return false;
+        }
+    }
+</script>
+
+</html>

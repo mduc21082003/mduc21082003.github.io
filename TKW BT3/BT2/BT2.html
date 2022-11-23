@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <link rel="stylesheet" href="bai1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <style>
+        #all {
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+}
+.imgbaomoi{
+    width: 125px;
+    height: 50px;
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 125px 50px;   
+    margin-top: 20px;
+    margin-left: 17%;
+    background-image: url(https://baomoi-static.bmcdn.me/web-v2/prod/v0.3.11/public/images/default-skin/bm-logo.png);
+}
+.search1{
+    height: 25px;
+    width: 500px;
+    padding-left: 10px;
+    margin-top: 32px;
+    margin-left: 50px;
+    border: 1pt solid gray;
+}
+.search1:hover{
+    border-color: #2FA1B3;
+}
+.menu{
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #2FA1B3;
+    margin-top: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    float: left;
+    color: beige;
+    padding: 0px 22px 0px 20px;
+    line-height: 40px; 
+}
+li{
+    margin-left: 17%;
+    list-style: none;
+}
+#border1{
+    border-left: 1pt solid white ;
+    padding: 0px 15px ;
+    font-size: 16px;
+    color: white;
+}
+#border1:hover{
+    background: darkcyan;
+}
+#border2{
+    font-size:11pt;
+    color: white;
+}
+#border2:hover{
+    color: darkcyan;
+}
+#menu{
+    font-size: 20px;
+    align-items: center;
+    color: white;
+    padding-top: 10px;
+    border-left: 1pt solid white ;
+    border-right: 1pt solid white;
+    padding: 10px;
+    margin-left: 120px;
+}
+#menu:hover{
+    background: darkcyan;
+}
+
+/* body */
+.body {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+/* body-left1 */
+.body-left {
+    margin-left: 17%;
+    width: 670px;
+    height: 900px;
+    background-color: rgb(250, 250, 250);
+}
+
+.body-left-mini {
+    display: flex;
+    gap: 8px;
+}
+
+.mini1 {
+    text-decoration: none;
+    color: rgb(169, 158, 158);
+    margin-top: 15px;
+}
+.mini1:hover {
+    color: #2FA1B3;
+}
+.time {
+    display: inline;
+    color: rgb(165, 157, 157);
+    margin-top: 15px;
+}
+
+.body-left-anh1 {
+    width: 50px;
+    height: 20px;
+    margin-top: 12px;
+}
+
+.anh1 {
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.anh1:hover {
+    transform: scale(1.02);
+}
+
+.left-link1 {
+    text-decoration: none;
+    font-size: 35px;
+    text-align: justify;
+    color: black;
+}
+
+.left-link1:hover {
+    color: #2FA1B3;
+}
+
+/* body-left2 */
+.body-left1 {
+    display: flex;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.left1-1 {
+    width: 213px;
+    background-color: rgb(250, 250, 250);
+}
+
+.left-link2 {
+    text-decoration: none;
+    font-size: 23px;
+    text-align: justify;
+    color: black;
+}
+
+.left-link2:hover {
+    color: #2FA1B3;
+}
+
+.left-anh1 {
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 10px;
+}
+.left-anh1:hover {
+    transform: scale(1.02);
+}
+/* body-left2 */
+.body-left2 {
+    margin-left: 15px;
+    background-color: rgb(250, 250, 250);
+
+}
+
+.left-anh2 {
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 10px;
+}
+.left-anh2:hover {
+    transform: scale(1.02);
+}
+.left-link3 {
+    text-decoration: none;
+    font-size: 24px;
+    text-align: justify;
+    color: black;
+}
+
+.left-link3:hover {
+    color: #2FA1B3;
+}
+
+.left-22 {
+    width: 650px;
+    height: 100px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.left-21 {
+    width: 650px;
+    height: 100px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    gap: 8px;
+    margin-top: 45px;
+}
+
+/* body-right */
+/* body-right1 */
+.body-right {
+    margin-left: 15px;
+    background-color: rgb(250, 250, 250);
+
+}
+
+.right-anh1 {
+    border: 1px solid rgb(250, 250, 250);
+    border-radius: 10px;
+}
+.right-anh1:hover {
+    transform: scale(1.02);
+}
+.right-link1 {
+    text-decoration: none;
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+}
+
+.right-link1:hover {
+    color: #2FA1B3;
+}
+
+.right {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.right1 {
+    width: 300px;
+    height: 80px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    gap: 8px;
+}
+
+.right3 {
+    margin-top: 100px;
+}
+
+/* left mini */
+.body-left1-mini {
+    display: flex;
+    gap: 8px;
+}
+
+.body-left1-anh1 {
+    width: 65px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.left1-time1 {
+    display: inline;
+    color: rgb(165, 157, 157);
+    margin-top: 6px;
+}
+
+.body-left1-anh2 {
+    width: 50px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.body-left1-anh3 {
+    width: 70px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.body-left2-mini {
+    display: flex;
+    gap: 8px;
+}
+
+.left2-mini1 {
+    text-decoration: none;
+    color: rgb(169, 158, 158);
+    margin-top: 24px;
+}
+.left2-mini1:hover {
+    color: #2FA1B3;
+}
+.left2-time {
+    display: inline;
+    color: rgb(165, 157, 157);
+    margin-top: 24px;
+}
+
+.body-left2-anh1 {
+    width: 50px;
+    height: 20px;
+    margin-top: 24px;
+}
+
+.left2-mini2 {
+    text-decoration: none;
+    color: rgb(169, 158, 158);
+    margin-top: 24px;
+}
+
+.left2-time1 {
+    display: inline;
+    color: rgb(165, 157, 157);
+    margin-top: 24px;
+}
+
+.body-left2-anh2 {
+    width: 50px;
+    height: 20px;
+    margin-top: 24px;
+}
+
+/* right mini */
+.body-right-mini {
+    display: flex;
+    gap: 8px;
+}
+
+.right-mini1 {
+    text-decoration: none;
+    color: rgb(169, 158, 158);
+    font-size: 13px;
+    margin-top: 8px;
+}
+.right-mini1:hover {
+    color: #2FA1B3;
+}
+.right-time1 {
+    display: inline;
+    color: rgb(165, 157, 157);
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.body-right-anh1 {
+    width: 40px;
+    height: 15px;
+    margin-top: 8px;
+}
+    </style>
+    <div id="all">
+        <div class="header">
+            <a href="https://baomoi.com/" class="imgbaomoi"></a>
+            <input class="search1" type="text" placeholder="Nhập nội dung tìm kiếm">
+            </div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a id="border1" href="https://baomoi.com/">NÓNG</a> </li>
+                <li><a id="border1" href="https://baomoi.com/tin-moi.epi">MỚI</a> </li>
+                <li><a id="border1" href="https://baomoi.com/tin-video.epi">VIDEO</a> </li>
+                <li><a id="border1" href="https://baomoi.com/chu-de.epi">CHỦ ĐỀ</a> </li>
+                <li><a id="border2" href="https://baomoi.com/nang-luong-tich-cuc/top/338.epi"># Năng lượng tích cực</a> </li>
+                <li><a id="border2" href="https://baomoi.com/kham-pha-viet-nam/top/335.epi"># Khám phá Việt Nam</a> </li>
+                <li><a id="border2" href="https://baomoi.com/kham-pha-the-gioi/top/363.epi"># Khám phá Thế Giới</a> </li>
+                <i id="menu"  class="fas fa-bars"></i>
+            </ul>
+        </div>
+        </div>
+        <div class="body">
+            <div class="body-left">
+                <img src="https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_10_11_65_43968607/b5a8ed83d3ce3a9063df.jpg" alt="" width="670px" class="anh1">
+                <a class="left-link1" href="https://baomoi.com/pho-co-hoi-an-ngap-trong-nuoc-lu-nguoi-dan-di-lai-bang-ghe/c/43968607.epi">Phố cổ Hội An ngập trong nước lũ, người dân đi lại bằng ghe</a>
+                <div class="body-left-mini">
+                    <a href="https://baomoi.com/bao-vov/p/65.epi"><img class="body-left-anh1" src="https://photo-baomoi.bmcdn.me/a1493a27e7640e3a5775.png" alt=""></a>
+                    <p class="time">2 giờ</p>
+                    <a class="mini1" href="https://baomoi.com/hoi-an/t/31743111.epi">52 liên quan</a>
+                </div>
+                <div class="body-left1">
+                    <div class="left1-1">
+                        <img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_10_11_30_43968292/5ed86dfc53b1baefe3a0.jpg" alt="" width="213px" height="130px" class="left-anh1">
+                        <a class="left-link2" href="https://baomoi.com/set-danh-thung-mot-may-bay-dang-dau-tai-tan-son-nhat/c/43968292.epi">Sét đánh thủng một máy bay đang đậu tại Tân Sơn Nhất</a>
+                        <div class="body-left1-mini">
+                            <a href="https://baomoi.com/bao-giao-thong/p/30.epi"><img class="body-left1-anh1" src="https://photo-baomoi.bmcdn.me/c6b35edd839e6ac0338f.png" alt=""></a>
+                            <p class="left1-time1">26 phút</p>
+                        </div>
+                    </div>
+                    <div class="left1-1">
+                        <img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_10_11_65_43967811/9680c8a3f6ee1fb046ff.jpg" alt="" width="213px" height="130px" class="left-anh1">
+                        <a class="left-link2"
+                            href="https://baomoi.com/lanh-dao-vff-thong-tin-ve-tuong-lai-cua-hlv-park-hang-seo/c/43967811.epi">Lãnh đạo VFF thông tin về tương lai của HLV Park Hang Seo</a>
+                        <div class="body-left1-mini">
+                            <a href="https://baomoi.com/bao-vov/p/65.epi"><img class="body-left1-anh2" src="https://photo-baomoi.bmcdn.me/a1493a27e7640e3a5775.png" alt=""></a>
+                            <p class="left1-time1">1 giờ</p>
+                        </div>
+                    </div>
+                    <div class="left1-1">
+                        <img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_10_11_20_43967963/55ea48cb76869fd8c697.jpg" alt="" width="213px" height="130px" class="left-anh1">
+                        <a class="left-link2" href="https://baomoi.com/can-canh-tim-kiem-ky-su-mat-tich-o-to-may-thuy-dien-ka-tinh-1/c/43967963.epi">Cận cảnh tìm kiếm kỹ sư mất tích ở tổ máy thủy điện Kà Tinh 1</a>
+                        <div class="body-left1-mini">
+                            <a href="https://baomoi.com/bao-tien-phong/p/20.epi"><img class="body-left1-anh3" src="https://photo-baomoi.bmcdn.me/b3a88dc75084b9dae095.png" alt=""></a>
+                            <p class="left1-time1">40 phút</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body-left2">
+                    <div class="left-21">
+                        <img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_10_11_15_43965519/41677623486ea130f87f.jpg" alt="" width="155px" height="100px" class="left-anh2">
+                        <div>
+                            <a class="left-link3" href="https://baomoi.com/canh-sat-chua-chay-nhat-duoc-nhieu-vang-mieng-khi-dap-lua/c/43965519.epi">Cảnh sát chữa cháy nhặt được nhiều vàng miếng khi dập lửa</a>
+                            <div class="body-left2-mini">
+                                <a href="https://baomoi.com/bao-nguoi-lao-dong/p/15.epi"><img class="body-left2-anh1" src="https://photo-baomoi.bmcdn.me/0b89da8919caf094a9db.png" alt=""></a>
+                                <p class="left2-time">5 giờ</p>
+                                <a class="left2-mini1" href="https://baomoi.com/an-cuu/t/31750136.epi">16 liên quan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-22">
+                        <img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_10_11_240_43962095/941fb07c8e31676f3e20.jpg" alt="" width="155px" height="100px" class="left-anh2">
+                        <div>
+                            <a class="left-link3" href="https://baomoi.com/tp-hcm-doi-nam-nu-di-xe-may-bat-ngo-dung-giua-duong-gio-cao-diem-de-lam-mot-viec-y-nghia/c/43962095.epi">TP.HCM: Đôi nam nữ đi xe máy bất ngờ dừng giữa đường giờ cao điểm để làm một việc ý nghĩa</a>
+                            <div class="body-left2-mini">
+                                <a href="https://baomoi.com/bao-infonet/p/240.epi"><img class="body-left2-anh2" src="https://photo-baomoi.bmcdn.me/cd107f7ea23d4b63122c.png" alt=""></a>
+                                <p class="left2-time1">10 giờ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-22">
+                        <img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_10_11_23_43966100/e50e9ab9a6f44faa16e5.jpg" alt="" width="155px" height="100px" class="left-anh2">
+                        <div>
+                            <a class="left-link3" href="https://baomoi.com/de-nghi-cua-chong-trong-phong-karaoke-khien-vo-chet-lang/c/43966100.epi">Đề nghị của chồng trong phòng karaoke khiến vợ chết lặng</a>
+                            <div class="body-left2-mini">
+                                <a href="https://baomoi.com/bao-vietnamnet/p/23.epi"><img class="body-left2-anh2" src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt=""></a>
+                                <p class="left2-time1">4 giờ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-right">
+                <div class="right1">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r1x1_sm/2022_10_03_293_43892476/9296eef72db5c4eb9da4.jpg" alt="" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://baomoi.com/hinh-anh-tong-bi-thu-chu-tri-hoi-nghi-trung-uong-dang-lan-thu-sau/c/43892476.epi">Hình ảnh Tổng Bí thư chủ trì hội nghị Trung ương Đảng lần thứ sáu</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bao-vietnamplus/p/293.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/d1c2f8ad25eeccb095ff.png" alt=""></a>
+                            <a class="right-mini1" href="https://baomoi.com/nguyen-phu-trong/t/20157357.epi">358 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_09_28_17_43853652/90958ab54bf7a2a9fbe6.jpg" alt="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_09_28_17_43853652/90958ab54bf7a2a9fbe6.jpg" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://baomoi.com/bao-tien-phong/p/20.epi">Bạo loạn ở giải VĐQG Indonesia, hơn 100 người thiệt mạng</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bao-phap-luat-tp-hcm/p/114.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/b3a88dc75084b9dae095.png" alt=""></a>
+                            <p class="right-time1">5 giờ</p>
+                            <a class="right-mini1" href="https://baomoi.com/shark-binh/t/30935597.epi">31 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r1x1_sm/2022_10_11_14_43968418/fceb98cea6834fdd1692.jpg" alt="" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://baomoi.com/hang-tram-nguoi-dan-thua-thien-hue-ung-cuu-sat-lo-bo-bien/c/43968418.epi">Hàng trăm người dân Thừa Thiên Huế ứng cứu sạt lở bờ biển</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bao-nhan-dan/p/14.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/4e023e6de32e0a70533f.png" alt=""></a>
+                            <p class="right-time1">2 giờ</p>
+                            <a class="right-mini1" href="https://baomoi.com/an-duong-1/t/31751380.epi">6 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_10_11_324_43968408/1de669f2adb144ef1da0.jpg" alt="" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://baomoi.com/so-tai-khoan-chung-khoan-mo-moi-thap-nhat-trong-hon-1-nam/c/43968408.epi">Số tài khoản chứng khoán mở mới thấp nhất trong hơn 1 năm</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bnews/p/324.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/dac33fb9effb06a55fea.png" alt=""></a>
+                            <p class="right-time1">5 giờ</p>
+                            <a class="right-mini1" href="https://baomoi.com/shark-binh/t/30935597.epi">123 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r1x1_sm/2022_10_11_17_43968396/d16ff94ac7072e597716.jpg" alt="" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://baomoi.com/nam-sinh-lop-12-bi-dam-tu-vong-tren-duong-di-hoc-ve/c/43968396.epi">Nam sinh lớp 12 bị đâm tử vong trên đường đi học về</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bao-sai-gon-giai-phong/p/17.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/a60983665e25b77bee34.png" alt=""></a>
+                            <p class="right-time1">11 phút</p>
+                            <a class="right-mini1" href="https://baomoi.com/thpt-ly-chinh-thang/t/31753377.epi">17 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r1x1_sm/2022_10_11_65_43968406/cfe0f1c5cf8826d67f99.jpg" alt="" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://baomoi.com/cu-tri-lam-dong-phan-nan-thu-tuc-cap-giay-to-dat-con-ruom-ra/c/43968406.epi">Cử tri Lâm Đồng phàn nàn thủ tục cấp giấy tờ đất còn rườm rà</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bao-vov/p/65.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/a1493a27e7640e3a5775.png" alt=""></a>
+                            <p class="right-time1">15 phút</p>
+                            <a class="right-mini1" href="https://baomoi.com/doan-dbqh-tinh-lam-dong/t/31652269.epi">31 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r3x2_sm/2022_10_02_293_43888799/f20d3a83f9c1109f49d0.jpg" alt="" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://www.vietnamplus.vn/mua-dong-o-nam-trung-bo-tay-nguyen-va-nam-bo-co-the-keo-dai/821513.vnp">Mưa dông ở Nam Trung Bộ, Tây Nguyên và Nam Bộ có thể kéo dài</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bao-phap-luat-tp-hcm/p/114.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/f12dd0420d01e45fbd10.png" alt=""></a>
+                            <p class="right-time1">5 giờ</p>
+                            <a class="right-mini1" href="https://baomoi.com/shark-binh/t/30935597.epi">31 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="https://photo-baomoi.bmcdn.me/w300_r1x1_sm/2022_10_02_20_43888841/f876b3ff70bd99e3c0ac.jpg" alt="" style="width:60px;height:60px" class="right-anh1">
+                    <div>
+                        <a class="right-link1" href="https://tienphong.vn/a-hau-1-quynh-chau-ngoai-doi-thuong-post1474479.tpo">Á hậu 1 Quỳnh Châu ngoài đời thường</a>
+                        <div class="body-right-mini">
+                            <a href="https://baomoi.com/bao-phap-luat-tp-hcm/p/114.epi"><img class="body-right-anh1" src="https://photo-baomoi.bmcdn.me/b3a88dc75084b9dae095.png" alt=""></a>
+                            <p class="right-time1">5 giờ</p>
+                            <a class="right-mini1" href="https://baomoi.com/shark-binh/t/30935597.epi">31 liên quan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right3">
+                    <a href="https://baomoi.com/chu-tich-ho-chi-minh/top/114.epi"><img src="https://baomoi-static.bmcdn.me/events/banner_hcm_02-min.png" style="width: 300px;height: 285px" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display:flex; align-items: center; justify-content: center;"><a style="font-size: 30px; text-decoration: none; color: red;" href="https://mduc21082003.github.io/"><b>RETURN HOMEPAGE</b></a></div>
+</body>
+</html>

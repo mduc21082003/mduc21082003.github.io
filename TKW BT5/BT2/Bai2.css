@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+/* menu */
+.menu {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* menu1 */
+.menu1 {
+    display: flex;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.menu11 {
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+.menu12 {
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    color: #704412;
+    font-size: 30px;
+}
+
+/* menu2 */
+.menu2 {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.menu21-11 {
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+}
+
+.menu21-12 {
+    z-index: -1;
+    position: absolute;
+    margin-top: 5.5px;
+    margin-left: 0px;
+    display: none;
+}
+
+.menu21-1 {
+    list-style-type: none;
+    float: left;
+}
+
+.menu21-12 li {
+    list-style-type: none;
+    width: 140px;
+}
+
+.menu21-12 li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    display: block;
+    box-shadow: 0px 6px 16px 1px rgb(219, 208, 208);
+}
+
+.menu21-1:hover .menu21-12 {
+    display: block;
+}
+
+.menu21-12 li a:hover {
+    background-color: darkgray;
+    color: #ffffff;
+}
+
+.menu21-11:hover {
+    background-color: darkgoldenrod;
+    color: #ffffff;
+}
+
+.menu21-1:hover .menu21-11 {
+    background-color: darkgoldenrod;
+    color: #ffffff;
+}
+
+/* gallery */
+.menu21-14 {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    margin-top: -25px;
+    margin-left: 120px;
+}
+
+.menu21-14 li a {
+    color: rgb(0, 0, 0);
+}
+
+.menu21-13:hover .menu21-14 {
+    display: block;
+}
+
+.menu21-13:hover .menu21-15 {
+    background-color: darkgray;
+    color: #ffffff;
+}
+
+/* topbar */
+.topbar {
+    width: 100%;
+}
+
+.topbar1 {
+    z-index: -3;
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.topbar11 {
+    font-family: Arial;
+}
+
+.topbar-pt1 {
+    z-index: -4;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    height: 450px;
+}
+
+.topbar1-pt1 {
+    margin-left: 400px;
+    margin-top: 100px;
+    width: 360px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.topbar11 p {
+    margin-left: 50px;
+    width: 350px;
+    text-align: justify;
+}
+
+.topbar11-nd1 {
+    font-size: 24px;
+    margin-top: 100px;
+}
+
+/* body */
+.body {
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+    margin-top: 500px;
+    display: flex;
+    gap: 40px;
+}
+
+/* body1 */
+.body1 {
+    margin-left: 200px;
+    width: 35%;
+}
+
+.body1 h2 {
+    margin-bottom: 20px;
+}
+
+.body1-pt1 {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin-right: 20px;
+    float: left;
+    line-height: 80%;
+}
+
+.body1 p {
+    font-size: 13px;
+}
+
+.body11 {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+}
+
+.body11-pt1 {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+
+/* body2 */
+.body2 {
+    width: 35%;
+}
+
+.body2 h2 {
+    margin-bottom: 20px;
+}
+
+.body p {
+    font-size: 13px;
+}
+
+.body2-nd1 {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.body21 {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 93px;
+}
+
+
+.end1 {
+    color: #d5ff02;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
