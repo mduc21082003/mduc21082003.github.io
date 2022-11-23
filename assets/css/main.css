@@ -195,7 +195,7 @@
 .container__works-bigbox {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
 }
 
 .container__works-box {
@@ -204,7 +204,17 @@
     overflow: hidden;
     border: 16px solid white;
     background-color: white;
-    border-radius: 10px;
+}
+
+.container__works-bigbox {
+    margin: 0 18%;
+}
+
+.container__works-img {
+    border-radius: 30%;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
 }
 
 .container__contact {
@@ -218,4 +228,5 @@
     text-align: center;
     line-height: 300px;
 }
+
 
