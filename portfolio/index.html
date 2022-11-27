@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="all">
-        <header class="header">
+        <header class="header" id="myTopnav">
                 <nav class="header__navbar">
                     <div class="header__navbar-logo">
                         <a href="https://221000395.000webhostapp.com"><i class="fa-brands fa-redhat"></i> DucNguyen / Developer</a>
@@ -24,6 +24,7 @@
                         <li class="header__navbar-item"><a href="#works"><i class="fa-solid fa-clipboard"></i></i> Works</a></li>
                         <li class="header__navbar-item"><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
                     </ul>
+                    <a href="javascript:void(0);" class="iconmenu" onclick="myFunction()"> &equiv;</a>
                 </nav>
         </header>
         <div class="container">
@@ -81,62 +82,165 @@
                         <span class="skills_percent">30%</span>
                     </div>
                 </div>
+                <div class="container__skills-github">
+                    <div class="container__skills-box">
+                        <div class="container__skills-name">
+                            <i class="fa-brands fa-github skills_icon"></i>
+                        <span class="skills_name">GITHUB</span>
+                        </div>
+                    </div>
+                    <div class="skills_bar skills_github"></div>
+                    <div class="container__skills-percent">
+                        <span class="skills_percent">20%</span>
+                    </div>
+                </div>
             </div>
             <!-- works -->
             <div class="container__works" id="works">
                 <h1 class="container__works-h1">Works</h1>
                 <div class="container__works-bigbox">
                     <div class="container__works-box">
-                        <img src="" alt="" class=".container__works-img">
-                        <a href="./assets/table/BT buổi 1.html">Exercise lesson 1:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lession\ 1.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/TKW%20BT1/BT1/BT1.html"><i class="fa-solid fa-link"></i>1</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT1/BT2/BT2.1.html"><i class="fa-solid fa-link"></i>2.1</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT1/BT2/BT2.2.html"><i class="fa-solid fa-link"></i>2.2</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT1/BT2/BT2.3.html"><i class="fa-solid fa-link"></i>2.3</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT1/BT3/BT3.html"><i class="fa-solid fa-link"></i>3</a>
+                        </div>
+                        <h1>Exercise lession 1:<br />HTML</h1>    
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="" class=".container__works-img">
-                        <a href="./assets/table/BT buổi 2.html">Exercise lesson 2:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 2.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/TKW%20BT2/BT1.html"><i class="fa-solid fa-link"></i>1</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT2/BT2.html"><i class="fa-solid fa-link"></i>2</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT2/BT3.html"><i class="fa-solid fa-link"></i>3</a>
+                        </div>
+                        <h1>Exercise lession 2: <br />CSS Selectors</h1>
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="">
-                        <a href="./assets/table/BT buổi 3.html">Exercise lesson 3:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 3.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/TKW%20BT3/BT1/BT1.html"><i class="fa-solid fa-link"></i>1</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT3/BT2/BT2.html"><i class="fa-solid fa-link"></i>2</a>
+                        </div>
+                        <h1>Exercise lession 3: <br />CSS Elements</h1>
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="">
-                        <a href="./assets/table/BT buổi 4.html">Exercise lesson 4:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 4.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/TKW%20BT4/BT1/bai1.html"><i class="fa-solid fa-link"></i>1</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT4/BT2/BT2.html"><i class="fa-solid fa-link"></i>2</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT4/BT3/bai3.html"><i class="fa-solid fa-link"></i>3</a>
+                        </div>
+                        <h1>Exercise lession 4: <br />CSS Layouts</h1>
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="">
-                        <a href="./assets/table/BT buổi 5.html">Exercise lesson 5:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 5.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/TKW%20BT5/BT1/Bai1.1.html"><i class="fa-solid fa-link"></i>1.1</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT5/BT1/Bai1.2.html"><i class="fa-solid fa-link"></i>1.2</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT5/BT2/Bai2.html"><i class="fa-solid fa-link"></i>2</a>
+                        </div>
+                        <h1>Exercise lession 5: <br />CSS Navigation bars</h1>
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="">
-                        <a href="./assets/table/BT buổi 6.html">Exercise lesson 6:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 6.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                        <h1>Exercise lession 6: <br />CSS Layers</h1>
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="">
-                        <a href="./assets/table/BT buổi 7.html">Exercise lesson 7:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 7.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/TKW%20BT7/BT1.html"><i class="fa-solid fa-link"></i>1</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT7/BT2.html"><i class="fa-solid fa-link"></i>2</a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT7/BT3.html"><i class="fa-solid fa-link"></i>3</a>
+                        </div>
+                        <h1>Exercise lession 7: <br />Javascript Form</h1>
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="">
-                        <a href="./assets/table/BT buổi 8.html">Exercise lesson 8:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 8.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                        <h1>Exercise lession 8:<br /> Javascript Validate</h1>
                     </div>
                     <div class="container__works-box">
-                        <img src="" alt="">
-                        <a href="./assets/table/BT buổi 9.html">Exercise lesson 9:</a>
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 9.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/TKW%20BT8/BT%201/BT%201.html"><i class="fa-solid fa-link"></i>1</a>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                            <a href="https://mduc21082003.github.io/TKW%20BT8/BT%203/BT5.1.html"><i class="fa-solid fa-link"></i>3</a>
+                        </div>
+                        <h1>Exercise lession 9: <br />Javascript DOM</h1>
                     </div>
                     <div class="container__works-box">
+<<<<<<< HEAD
+                        <div class="container__works-img" style="background-image: url(./assets/img/lesson\ 10.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                        <h1>Exercise lession 10: <br />Bootstrap</h1>
+                    </div>
+                    <div class="container__works-box">
+                        <div class="container__works-img" style="background-image: url(./assets/img/exam.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href=""><i class="fa-solid fa-link"></i></a>
+                        </div>
+                        <h1>Exam 30% point</h1>
+                    </div>
+                    <div class="container__works-box">
+                        <div class="container__works-img" style="background-image: url(./assets/img/exam.jpg);"></div>
+                        <div class="container__works-link">
+                            <a href="https://mduc21082003.github.io/portfolio/index.html"><i class="fa-solid fa-link "></i></a>
+                        </div>
+                        <h1>Exam 60% point</h1>
+=======
                         <img src="" alt="">
                         <a href="https://mduc21082003.github.io/B%C3%A0i%20KT%20TKW%2030%/TKW.html">Test 30% point:</a>
+>>>>>>> 7e45c71c5902aa9773d301c9f8f4cfb308299238
                     </div>
                 </div>
             </div>
             <!-- contacts -->
             <div class="container__contact" id="contact">
                 <h1 class="container__contact-h1">Contact</h1>
-                
+                <div class="container__contact-info">
+                    <a href="mailto:mduc21082003@gmail.com" class="container__contact-info-item" id="contact_active" >
+                        <i class="fa-solid fa-envelope contact_icon"></i>
+                        <span>Mail me</span>
+                    </a>
+                    <a class="container__contact-info-item">
+                        <i class="fa-solid fa-mobile contact_icon"></i>
+                        <span>0362182003</span>
+                    </a>
+                </div>
+                <form action="" class="container__contact-form">
+                    <input type="text" placeholder="Your name" class="container__contact-input name">
+                    <input type="text" placeholder="Enter your email" class="container__contact-input email">
+                    <textarea name="message" placeholder="Your message" id="" cols="30" rows="10" class="container__contact-input message"></textarea>
+                    <button type="submit" class="container__contact-input send">SEND</button>
+                </form>
             </div>
         </div>
 
         <footer class="footer">
-
+            <h1 class="footer__content-h1">Duc Nguyen Minh</h1>
+            <div class="footer__content-icon">
+                <a href="https://www.facebook.com/profile.php?id=100005989845782"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="footer__content-p">© 2022 copyright all right reserved</p>
         </footer>
     </div>
 </body>
