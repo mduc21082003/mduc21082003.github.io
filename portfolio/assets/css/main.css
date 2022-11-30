@@ -2,6 +2,7 @@
     width: 100%;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .header__navbar {
     background-color: white;
     width: 100%;
@@ -15,8 +16,12 @@
     overflow: hidden;
 }
 
-.iconmenu {
+.header__navbar-toggle {
     display: none;
+    font-size: 50px;
+    cursor: pointer;
+    text-align: right;
+    padding: 12px;
 }
 
 .header__navbar-logo a  {
@@ -87,7 +92,7 @@
 }
 
 .container__aboutme {
-    background-color: rgb(112, 200, 250);
+    background-color: #00cec9;
     height: 720px;
 }
 
@@ -122,7 +127,7 @@
 }
 
 .container__skills {
-    background-color: rgb(255, 212, 160);
+    background-color: #ffeaa7;
     height: 720px;
 }
 
@@ -253,7 +258,7 @@
 
 .container__contact {
     height: 720px;
-    background-color: rgb(109, 235, 227);
+    background-color: #b2bec3;
 }
 
 .container__contact-h1 {
@@ -314,7 +319,7 @@
 }
 
 #contact_active {
-    background-color: rgb(85, 255, 85);
+    background-color: #00ff6a;
 }
 
 .container__contact-input {
@@ -354,7 +359,7 @@
 
 .footer {
     height: 150px;
-    background-color: white;
+    background-color: #8d999e;
 }
 
 .footer__content-h1 {
@@ -384,4 +389,21 @@
     font-weight: 600;
     font-size: 18px;
     color: black;
+}
+
+@media screen  and (max-width: 768px){
+    .header__navbar-toggle{
+        display: block;
+    }
+    .header__navbar-list {
+        flex-direction: column;
+        display: flex;
+        overflow: hidden;
+        position: fixed;
+        background-color: white;
+        margin-bottom: 14px;
+    }
+    .header__navbar-logo {
+       display: none;
+    }
 }
